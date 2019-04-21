@@ -64,6 +64,7 @@
             </LinearLayout>
 
             <TextView
+                android:maxLines="1"
                 android:id="@+id/addressTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,6 +79,7 @@
                 android:text="방의 종류" />
 
             <TextView
+                android:maxLines="1"
                 android:id="@+id/descriptionTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
