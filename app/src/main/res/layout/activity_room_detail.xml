@@ -20,7 +20,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="210dp"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/ic_launcher" />
 
@@ -77,6 +77,8 @@
                     android:background="#475AC5"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
                     android:text="방주인에게 매물정보와 거래상태를 확인받은 매물입니다."
                     android:textColor="#ffffff" />
 
@@ -144,17 +146,18 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/ic_launcher" />
 
                     <TextView
+                        android:id="@+id/roomTypeTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="원룸" />
@@ -163,58 +166,61 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/ic_launcher" />
 
                     <TextView
+                        android:id="@+id/roomSizeTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="원룸" />
+                        android:text="방크기" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/ic_launcher" />
 
                     <TextView
+                        android:id="@+id/floorTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="원룸" />
+                        android:text="층수" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="40dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:src="@mipmap/ic_launcher" />
 
                     <TextView
+                        android:id="@+id/adminPayment"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="원룸" />
+                        android:text="관리비" />
 
                 </LinearLayout>
 
@@ -270,6 +276,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/smsConsulting"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -293,6 +300,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/phoneConsulting"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="1dp"

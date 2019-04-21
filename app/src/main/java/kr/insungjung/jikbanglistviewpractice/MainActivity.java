@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mRoomAdapter = new RoomAdapter(MainActivity.this, roomList);
         act.roomListView.setAdapter(mRoomAdapter);
 
+//        아이템 클릭 이벤트 - 누르면 아이템 상세페이지 열림
         act.roomListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -43,6 +44,32 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        아이템 롱클릭 이벤트 - 오래 누르면 해당하는 방 지운다.
+        act.roomListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                roomList.remove(position);
+                mRoomAdapter.notifyDataSetChanged();
+
+                return true;
+            }
+        });
+
+//        버튼 클릭 이벤트 - 버튼 누르면 방을 하나 추가한다.
+        act.addRoomBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                roomList.add(new Room(000,00,0,"미확인","임시방입니다.","임시방입니다.","임시방입니다.","00.00.00", "미확인", "미확인"));
+                mRoomAdapter.notifyDataSetChanged();
+
+                act.roomListView.smoothScrollToPosition(roomList.size()-1);
+
+            }
+        });
+
     }
 
     void fillRoom () {
