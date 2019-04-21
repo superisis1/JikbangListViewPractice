@@ -22,8 +22,8 @@ public class RoomDetailActivity extends AppCompatActivity {
 
         mRoomData = (Room) getIntent().getSerializableExtra("방정보");
 
-        act.itemCheckedAndDate.setText(String.format("%s, %s", mRoomData.itemChecked, mRoomData.date));
-        act.priceTxt.setText(String.format("%s, %d/%d", mRoomData.paymentType, mRoomData.deposit, mRoomData.monthPay));
+        act.itemCheckedAndDate.setText(String.format("%s %s", mRoomData.itemChecked, mRoomData.date));
+        act.priceTxt.setText(String.format("%s %d/%d", mRoomData.paymentType, mRoomData.deposit, mRoomData.monthPay));
         act.descriptionTxt.setText(mRoomData.description);
 
     }
