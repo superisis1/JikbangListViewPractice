@@ -14,31 +14,55 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="매물번호: 8126398" />
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/radius_black_bg2"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="1dp"
+                    android:text="매물번호: 8126398"
+                    android:textColor="#FAFAFA"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/logoWatermarkTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:gravity="center"
                     android:text="다방"
-                    android:textColor="#B9B9B9" />
+                    android:textColor="#CCB9B9B9"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_launcher" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/radius_black_bg"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="2dp"
+                    android:text="1/17"
+                    android:textColor="#FAFAFA"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,7 +72,7 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_weight="1"
                     android:background="#475AC5"
                     android:gravity="center_vertical"
@@ -57,13 +81,13 @@
                     android:textColor="#ffffff" />
 
                 <TextView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="#3545A8"
                     android:gravity="center"
                     android:text=" ? "
                     android:textColor="#ffffff"
-                    android:textSize="30sp" />
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -78,15 +102,17 @@
                     android:id="@+id/itemCheckedAndDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/radius_black_bg3"
                     android:text="확인매물 19.04.03"
-                    android:textColor="#FF3545A8"
-                    android:textSize="13sp" />
+                    android:textColor="@color/btn_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/priceTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="5dp"
                     android:text="월세 500/40"
                     android:textColor="#000000"
                     android:textSize="22sp"
@@ -105,8 +131,9 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginVertical="20dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/light_gray" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -196,12 +223,14 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginVertical="20dp"
-                android:background="@android:color/darker_gray" />
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/light_gray" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -232,32 +261,58 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:gravity="bottom"
-                android:orientation="horizontal">
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
 
-                <Button
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#2B82FF"
-                    android:text="문자상담"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:background="@color/btn_blue"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sms_black_24dp" />
+
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="문자상담"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_marginLeft="1dp"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
                     android:layout_weight="1"
-                    android:background="#2B82FF"
-                    android:text="전화상담"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:background="@color/btn_blue"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_phone_black_24dp" />
+
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전화상담"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
             </LinearLayout>
 
