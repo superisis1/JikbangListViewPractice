@@ -154,7 +154,7 @@
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/ic_home_black_24dp" />
 
                     <TextView
                         android:id="@+id/roomTypeTxt"
@@ -172,9 +172,10 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:padding="4dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/ic_photo_size_select_small_black_24dp" />
 
                     <TextView
                         android:id="@+id/roomSizeTxt"
@@ -192,9 +193,10 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:padding="2dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/ic_business_black_24dp" />
 
                     <TextView
                         android:id="@+id/floorTxt"
@@ -212,9 +214,10 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:padding="3dp"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/ic_receipt_black_24dp" />
 
                     <TextView
                         android:id="@+id/adminPayment"
