@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:paddingVertical="2dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/roomImg"
-            android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
             android:scaleType="centerCrop"
             android:src="@mipmap/ic_launcher" />
 
@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:text="100/13"
                     android:textColor="#D68306"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -68,14 +68,12 @@
                 android:id="@+id/addressTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:text="주소" />
 
             <TextView
                 android:id="@+id/roomTypeTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:text="방의 종류" />
 
             <TextView
@@ -83,7 +81,7 @@
                 android:id="@+id/descriptionTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:text="방의 설명"
                 android:textColor="#000000"/>
 

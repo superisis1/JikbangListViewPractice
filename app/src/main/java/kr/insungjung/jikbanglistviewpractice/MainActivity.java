@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 roomList.remove(position);
                 mRoomAdapter.notifyDataSetChanged();
 
+                Toast.makeText(MainActivity.this, "방을 삭제하였습니다.", Toast.LENGTH_SHORT).show();
+
                 return true;
             }
         });
@@ -66,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 mRoomAdapter.notifyDataSetChanged();
 
                 act.roomListView.smoothScrollToPosition(roomList.size()-1);
+
+                Toast.makeText(MainActivity.this, "방을 추가하였습니다.", Toast.LENGTH_SHORT).show();
 
             }
         });
