@@ -16,8 +16,11 @@ public class Room implements Serializable {
     public String itemChecked;
     public String paymentType;
 
+    public int itemNum;
 
-    public Room(int deposit, int monthPay, int floor, String agency, String address, String roomType, String description, String date, String itemChecked, String paymentType) {
+
+    public Room(int deposit, int monthPay, int floor, String agency, String address, String roomType,
+                String description, String date, String itemChecked, String paymentType, int itemNum) {
         this.deposit = deposit;
         this.monthPay = monthPay;
         this.floor = floor;
@@ -29,5 +32,7 @@ public class Room implements Serializable {
         this.date = date;
         this.itemChecked = itemChecked;
         this.paymentType = paymentType;
+
+        this.itemNum = itemNum;
     }
 }

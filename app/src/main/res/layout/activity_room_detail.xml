@@ -25,6 +25,7 @@
                     android:src="@drawable/room_img_1" />
 
                 <TextView
+                    android:id="@+id/itemNumTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
