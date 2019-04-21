@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -75,21 +75,25 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/itemCheckedAndDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="확인매물 19.04.03"
                     android:textColor="#FF3545A8"
-                    android:textSize="18sp" />
+                    android:textSize="13sp" />
 
                 <TextView
+                    android:id="@+id/priceTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:text="월세 500/40"
                     android:textColor="#000000"
-                    android:textSize="25sp" />
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/descriptionTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
@@ -98,13 +102,18 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@android:color/darker_gray" />
+
             <LinearLayout
-                android:paddingHorizontal="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -184,10 +193,15 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@android:color/darker_gray" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -195,29 +209,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="#C0C0C0"
+                    android:background="#E4E4E4"
+                    android:paddingHorizontal="5dp"
                     android:text="풀옵션" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="#C0C0C0"
-                    android:text="풀옵션" />
+                    android:background="#E4E4E4"
+                    android:paddingHorizontal="5dp"
+                    android:text="엘리베이터" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:background="#C0C0C0"
-                    android:text="풀옵션" />
+                    android:background="#E4E4E4"
+                    android:paddingHorizontal="5dp"
+                    android:text="빌트인" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="40dp"
+                android:gravity="bottom"
                 android:orientation="horizontal">
 
                 <Button
@@ -227,7 +245,7 @@
                     android:background="#2B82FF"
                     android:text="문자상담"
                     android:textColor="#ffffff"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <Button
@@ -238,11 +256,11 @@
                     android:background="#2B82FF"
                     android:text="전화상담"
                     android:textColor="#ffffff"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </layout>

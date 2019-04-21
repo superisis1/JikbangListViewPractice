@@ -42,7 +42,7 @@ public class RoomAdapter extends ArrayAdapter<Room> {
         TextView roomType = row.findViewById(R.id.roomTypeTxt);
         TextView description = row.findViewById(R.id.descriptionTxt);
 
-        depositTxt.setText(String.format("%d/%d", roomData.deposit,roomData.monthpay));
+        depositTxt.setText(String.format("%d/%d", roomData.deposit,roomData.monthPay));
         floorTxt.setText(String.format("%d층", roomData.floor));
         addressTxt.setText(roomData.address);
         roomType.setText(roomData.roomType);
