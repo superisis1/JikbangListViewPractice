@@ -22,7 +22,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/room_img_1" />
 
                 <TextView
                     android:layout_width="wrap_content"
